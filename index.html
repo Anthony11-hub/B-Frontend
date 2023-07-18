@@ -15,12 +15,24 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-KBXNLC2G');</script>
       <!-- End Google Tag Manager -->
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWPGMZBPY7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VWPGMZBPY7');
+    </script>
 </head>
+
 <body>
-  <p>just an empty page</p>
-  <!-- <div class="overlay" data-overlay></div>
+  <div class="overlay" data-overlay></div>
 
-
+    <!--
+    - MODAL
+  -->
+<!-- this code is a bug, it cannot be removed and i still don't understand why  -->
   <div class="modal" data-modal style="display: none;">
 
     <div class="modal-close-overlay" data-modal-overlay></div>
@@ -65,13 +77,17 @@
 
 
 
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
   <div class="notification-toast" data-toast style="display: none;">
 
     <button class="toast-close-btn" data-toast-close >
       <ion-icon name="close-outline"></ion-icon>
     </button>
   </div>
-
+<!-- end of bug code -->
   
     <header>    
         <div class="header-main">
@@ -297,6 +313,7 @@
     
           <button class="action-btn">
             <ion-icon name="add-circle-outline"></ion-icon>
+            <!-- <ion-icon name="cash-outline"></ion-icon> -->
           </button>
     
           <button class="action-btn" data-mobile-menu-open-btn>
@@ -471,8 +488,11 @@
     
       </header>
 
+      <!-- main -->
       <main>
-
+            <!--
+      - BANNER
+    -->
 
     <div class="banner">
 
@@ -509,7 +529,7 @@
 
       <div class="product-container">
         <div class="container">
-
+        <!-- sidebar -->
         <div class="sidebar  has-scrollbar" data-mobile-menu>
 
     <div class="sidebar-category">
@@ -871,10 +891,12 @@
     </div>
 
         </div>
-
+        <!-- end sidebar -->
         <div class="product-box">
 
-
+            <!--
+            - PRODUCT FEATURED
+          -->
 
           <div class="product-featured">
 
@@ -1053,7 +1075,7 @@
             </div>
 
           </div>
-
+          <!-- end product featured -->
 
         </div>
 
@@ -1062,14 +1084,16 @@
       </div>
 
       </main>
-
+      <!-- ===========================PRODUCTS=========================== -->
       <div class="main container">
         <h2 class="title">All the products</h2>
         <div class="products-grid js-products-grid">
         </div>
       </div>
 
- 
+  <!--
+    - FOOTER
+  -->
 
   <footer>
 
@@ -1361,27 +1385,28 @@
     <script>
       'use strict';
 
-
+      // modal variables
       const modal = document.querySelector('[data-modal]');
       const modalCloseBtn = document.querySelector('[data-modal-close]');
       const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 
-
+      // modal function
       const modalCloseFunc = function () { modal.classList.add('closed') }
 
-
+      // modal eventListener
       modalCloseOverlay.addEventListener('click', modalCloseFunc);
       modalCloseBtn.addEventListener('click', modalCloseFunc);
 
-
+      // notification toast variables
       const notificationToast = document.querySelector('[data-toast]');
       const toastCloseBtn = document.querySelector('[data-toast-close]');
 
+      // notification toast eventListener
       toastCloseBtn.addEventListener('click', function () {
         notificationToast.classList.add('closed');
       });
 
-
+      // mobile menu variables
       const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
       const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
       const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
@@ -1389,7 +1414,7 @@
 
       for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 
-
+        // mobile menu function
         const mobileMenuCloseFunc = function () {
           mobileMenu[i].classList.remove('active');
           overlay.classList.remove('active');
@@ -1405,6 +1430,7 @@
 
       }
 
+      // accordion variables
       const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
       const accordion = document.querySelectorAll('[data-accordion]');
 
@@ -1433,9 +1459,9 @@
         });
 
       }
-    </script> -->
-    <!-- <script src="data/products.js"></script>
-    <script src="scripts/main.js"></script> -->
+    </script>
+    <script src="data/products.js"></script>
+    <script src="scripts/main.js"></script>
     <!-- Google tag (gtag.js) -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWPGMZBPY7"></script> -->
     <!-- <script>
@@ -1448,9 +1474,9 @@
       <!--
     - ionicon link
   -->
-<!-- 
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXNLC2G"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
