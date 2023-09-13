@@ -1,7 +1,7 @@
 const products = [
     {
       id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-      image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+      image: "images/products/p4.jpeg",
       name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
       rating: {
         stars: 4.5,
@@ -12,7 +12,8 @@ const products = [
         "socks",
         "sports",
         "apparel"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
@@ -26,7 +27,8 @@ const products = [
       keywords: [
         "sports",
         "basketballs"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
@@ -43,7 +45,8 @@ const products = [
         "mens"
       ],
       type: "clothing",
-      sizeChartLink: "images/clothing-size-chart.png"
+      sizeChartLink: "images/clothing-size-chart.png",
+      description: 'This is the product description.....'
     },
     {
       id: "54e0eccd-8f36-462b-b68a-8182611d9add",
@@ -58,7 +61,8 @@ const products = [
         "toaster",
         "kitchen",
         "appliances"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
@@ -73,7 +77,8 @@ const products = [
         "plates",
         "kitchen",
         "dining"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
@@ -87,7 +92,8 @@ const products = [
       keywords: [
         "kitchen",
         "cookware"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
@@ -97,12 +103,13 @@ const products = [
         stars: 4.5,
         count: 317
       },
-      priceCents: 2400,
+      priceCents: 24009,
       keywords: [
         "hoodies",
         "sweaters",
         "apparel"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
@@ -119,7 +126,8 @@ const products = [
         "restroom",
         "towels",
         "bath towels"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
@@ -133,7 +141,8 @@ const products = [
       keywords: [
         "bathroom",
         "cleaning"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
@@ -148,7 +157,8 @@ const products = [
         "shoes",
         "running shoes",
         "footwear"
-      ]
+      ],
+      description: 'This is the product description.....'
     },
     {
       id: "5968897c-4d27-4872-89f6-5bcb052746d7",

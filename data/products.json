@@ -1,0 +1,279 @@
+[
+  {
+    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "image": "images/products/p4.jpeg",
+    "name": "Black and Gray Athletic Cotton Socks - 6 Pairs",
+    "priceCents": 1090,
+    "condition": "New",
+    "seller": "Business",
+    "location": "City A",
+    "number": "123-456-7890",
+    "productCategory": "Fashion and Clothing",
+    "description": "this is product description...."
+  },
+  {
+    "id": "15b6fc6f-327a-4ec4-896f-486349e85a3d",
+    "image": "images/products/intermediate-composite-basketball.jpg",
+    "name": "Intermediate Size Basketball",
+    "priceCents": 2095,
+    "condition": "Refurbished",
+    "seller": "Individual",
+    "location": "City B",
+    "number": "987-654-3210",
+    "productCategory": "Electronics",
+    "description": "this is product description...."
+  },
+  {
+    "id": "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
+    "image": "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    "name": "Adults Plain Cotton T-Shirt - 2 Pack",
+    "priceCents": 799,
+    "condition": "Slightly Used",
+    "seller": "Business",
+    "location": "City C",
+    "number": "555-123-4567",
+    "productCategory": "Home and Office",
+    "description": "this is product description...."
+  },
+  {
+    "id": "54e0eccd-8f36-462b-b68a-8182611d9add",
+    "image": "images/products/black-2-slot-toaster.jpg",
+    "name": "2 Slot Toaster - Black",
+    "priceCents": 1899,
+    "condition": "New",
+    "seller": "Individual",
+    "location": "City D",
+    "number": "222-333-4444",
+    "productCategory": "Smartphones and Accessories",
+    "description": "this is product description...."
+  },
+  {
+    "id": "3ebe75dc-64d2-4137-8860-1f5a963e534b",
+    "image": "images/products/6-piece-white-dinner-plate-set.jpg",
+    "name": "6 Piece White Dinner Plate Set",
+    "priceCents": 2067,
+    "condition": "Slightly Used",
+    "seller": "Individual",
+    "location": "City E",
+    "number": "777-888-9999",
+    "productCategory": "Automotive",
+    "description": "this is product description...."
+  },
+  {
+    "id": "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
+    "image": "images/products/6-piece-non-stick-baking-set.webp",
+    "name": "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    "rating": {
+      "stars": 4.5,
+      "count": 175
+    },
+    "priceCents": 3499,
+    "keywords": [
+      "kitchen",
+      "cookware"
+    ],
+    "condition": "Refurbished",
+    "seller": "Business",
+    "location": "City F",
+    "number": "444-555-6666",
+    "productCategory": "Computers",
+    "description": "this is product description...."
+  },
+  {
+    "id": "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
+    "image": "images/products/blackout-curtain-set-beige.webp",
+    "name": "Blackout Curtains Set 4-Pack - Beige",
+    "rating": {
+      "stars": 4.5,
+      "count": 232
+    },
+    "priceCents": 4599,
+    "keywords": [
+      "bedroom",
+      "curtains",
+      "home"
+    ],
+    "condition": "New",
+    "seller": "Individual",
+    "location": "City G",
+    "number": "999-000-1111",
+    "productCategory": "Fashion and Clothing",
+    "description": "this is product description...."
+  },
+  {
+    "id": "dd82ca78-a18b-4e2a-9250-31e67412f98d",
+    "image": "images/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
+    "name": "Plain Hooded Fleece Sweatshirt",
+    "rating": {
+      "stars": 4.5,
+      "count": 317
+    },
+    "priceCents": 2400,
+    "keywords": [
+      "hoodies",
+      "sweaters",
+      "apparel"
+    ],
+    "condition": "Slightly Used",
+    "seller": "Business",
+    "location": "City H",
+    "number": "777-222-3333",
+    "productCategory": "Cosmetics",
+    "description": "this is product description...."
+  },
+  {
+    "id": "77919bbe-0e56-475b-adde-4f24dfed3a04",
+    "image": "images/products/luxury-tower-set-6-piece.jpg",
+    "name": "Luxury Towel Set - Graphite Gray",
+    "rating": {
+      "stars": 4.5,
+      "count": 144
+    },
+    "priceCents": 3599,
+    "keywords": [
+      "bathroom",
+      "washroom",
+      "restroom",
+      "towels",
+      "bath towels"
+    ],
+    "condition": "New",
+    "seller": "Individual",
+    "location": "City I",
+    "number": "555-666-7777",
+    "productCategory": "Electronics",
+    "description": "this is product description...."
+  },
+  {
+    "id": "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
+    "image": "images/products/liquid-laundry-detergent-plain.jpg",
+    "name": "Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz",
+    "rating": {
+      "stars": 4.5,
+      "count": 305
+    },
+    "priceCents": 2899,
+    "keywords": [
+      "bathroom",
+      "cleaning"
+    ],
+    "condition": "Refurbished",
+    "seller": "Business",
+    "location": "City J",
+    "number": "111-222-3333",
+    "productCategory": "Home and Office",
+    "description": "this is product description...."
+  },
+  {
+    "id": "58b4fc92-e98c-42aa-8c55-b6b79996769a",
+    "image": "images/products/knit-athletic-sneakers-gray.jpg",
+    "name": "Waterproof Knit Athletic Sneakers - Gray",
+    "rating": {
+      "stars": 4,
+      "count": 89
+    },
+    "priceCents": 3390,
+    "keywords": [
+      "shoes",
+      "running shoes",
+      "footwear"
+    ],
+    "condition": "New",
+    "seller": "Individual",
+    "location": "City K",
+    "number": "888-777-6666",
+    "productCategory": "Smartphones and Accessories",
+    "description": "this is product description...."
+  },
+  {
+    "id": "bc2847e9-5323-403f-b7cf-57fde044a955",
+    "image": "images/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
+    "name": "Men's Full-Zip Hooded Fleece Sweatshirt",
+    "rating": {
+      "stars": 4.5,
+      "count": 3157
+    },
+    "priceCents": 2400,
+    "keywords": [
+      "sweaters",
+      "hoodies",
+      "apparel",
+      "mens"
+    ],
+    "condition": "Slightly Used",
+    "seller": "Individual",
+    "location": "City L",
+    "number": "333-444-5555",
+    "productCategory": "Automotive",
+    "description": "this is product description...."
+  },
+  {
+    "id": "5968897c-4d27-4872-89f6-5bcb052746d7",
+    "image": "images/products/women-chiffon-beachwear-coverup-black.jpg",
+    "name": "Women's Chiffon Beachwear Cover Up - Black",
+    "rating": {
+      "stars": 4.5,
+      "count": 235
+    },
+    "priceCents": 2070,
+    "keywords": [
+      "robe",
+      "swimsuit",
+      "swimming",
+      "bathing",
+      "apparel"
+    ],
+    "type": "clothing",
+    "sizeChartLink": "images/clothing-size-chart.png",
+    "condition": "Refurbished",
+    "seller": "Business",
+    "location": "City M",
+    "number": "666-777-8888",
+    "productCategory": "Computers",
+    "description": "this is product description...."
+  },
+  {
+    "id": "aad29d11-ea98-41ee-9285-b916638cac4a",
+    "image": "images/products/round-sunglasses-black.jpg",
+    "name": "Round Sunglasses",
+    "rating": {
+      "stars": 4.5,
+      "count": 30
+    },
+    "priceCents": 1560,
+    "keywords": [
+      "accessories",
+      "shades"
+    ],
+    "condition": "New",
+    "seller": "Individual",
+    "location": "City N",
+    "number": "777-999-0000",
+    "productCategory": "Fashion and Clothing",
+    "description": "this is product description...."
+  },
+  {
+    "id": "04701903-bc79-49c6-bc11-1af7e3651358",
+    "image": "images/products/women-beach-sandals.jpg",
+    "name": "Women's Two Strap Buckle Sandals - Tan",
+    "rating": {
+      "stars": 4.5,
+      "count": 562
+    },
+    "priceCents": 2499,
+    "keywords": [
+      "footwear",
+      "sandals",
+      "womens",
+      "beach",
+      "summer"
+    ],
+    "condition": "Slightly Used",
+    "seller": "Business",
+    "location": "City O",
+    "number": "999-888-7777",
+    "productCategory": "Cosmetics",
+    "description": "this is product description...."
+  }
+]
+  

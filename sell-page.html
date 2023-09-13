@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/pages/sell-page.css">
+  </head>
+<body>
+    <h3>
+      <a href="#">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        Back</a>
+    </h3>
+    <div class="container">
+        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+             <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Post your product</legend>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label">Your Name</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="first_name" placeholder="What do we call you?" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+        
+    <div class="form-group"> 
+      <label class="col-md-4 control-label">Seller profile</label>
+        <div class="col-md-4 selectContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa-solid fa-address-card"></i></span>
+        <select name="state" class="form-control selectpicker" >
+          <option value=" " >How do we categorize you?</option>
+          <option>Business</option>
+          <option>Individual</option>
+        </select>
+      </div>
+    </div>
+    </div>
+           
+    <div class="form-group">
+      <label class="col-md-4 control-label">Phone #</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input name="phone" placeholder="(254) 710-100-100" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+          
+    <div class="form-group">
+      <label class="col-md-4 control-label">Location</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="address" placeholder="Where are you selling from?" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+     
+    <div class="form-group">
+      <label class="col-md-4 control-label">Product Name</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa-solid fa-cart-shopping"></i></span>
+            <input name="city" placeholder="What are you selling?" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Select Basic -->
+       
+    <div class="form-group"> 
+      <label class="col-md-4 control-label">Product Category</label>
+        <div class="col-md-4 selectContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+        <select name="state" class="form-control selectpicker" >
+          <option value=" " >Choose the product category</option>
+          <option>Home & Office</option>
+          <option>Smartphones & Electronics</option>
+          <option >Fashion</option>
+          <option >Cosmetics</option>
+          <option >Automotive</option>
+          <option >Computers & Electronics</option>
+          <option >Others</option>
+        </select>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label">Quote Price</label>  
+       <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa-solid fa-coins"></i></span>
+      <input name="website" placeholder="10000" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- radio checks -->
+    <div class="form-group"> 
+        <label class="col-md-4 control-label">Product Condition</label>
+          <div class="col-md-4 selectContainer">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+          <select name="state" class="form-control selectpicker" >
+            <option value=" " >What is the status of your product</option>
+            <option>Brand New</option>
+            <option>Slightly used</option>
+            <option >Refurbished</option>
+          </select>
+        </div>
+      </div>
+      </div>
+    <!-- Text area -->
+      
+    <div class="form-group">
+      <label class="col-md-4 control-label">Product Description</label>
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea class="form-control" name="comment" placeholder="How would you desrcibe your product?"></textarea>
+      </div>
+      </div>
+    </div>
+
+      <div class="uploadOuter">
+        <label for="uploadFile" class="btn btn-primary">Upload Image</label>
+        <strong>OR</strong>
+      <span class="dragBox" >
+        Drag and Drop image here
+        <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
+      </span>
+      </div>
+      <div id="preview"></div>
+    
+    
+    <!-- Success message -->
+    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-success button" >Post Product</button>
+      </div>
+    </div>
+    
+            </fieldset>
+        </form>
+    </div>
+</div>
+        <!-- /.container -->
+
+        <footer>        
+            <div class="footer-bottom">
+        
+              <div class="container">
+        
+                <p class="copyright">
+                  &copy; <a href="#">blackm.co.ke</a>
+                </p>
+        
+              </div>
+        
+            </div>
+        
+          </footer>
+      <script src="scripts/sell.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
