@@ -476,9 +476,6 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  .tableView .product-cell.stock {
-    /* display: none; */
-  }
   .tableView .product-cell.price {
     flex: 0.2;
   }
