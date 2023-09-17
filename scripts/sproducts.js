@@ -27,7 +27,7 @@ function getURLParameter(name) {
       document.querySelector('.product-name').textContent = productDetails.keywords.join(', ');
       document.querySelector('.product-name').textContent = productDetails.name;
       document.querySelector('.description').textContent = productDetails.description;
-      document.querySelector('.product-price-discount').textContent = `KES ${productDetails.priceCents / 100}`;
+      document.querySelector('.product-price-discount').textContent = `Ksh ${productDetails.priceCents / 100}`;
   
       // ... Populate other elements with relevant data ...
     } else {

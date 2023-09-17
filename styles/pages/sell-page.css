@@ -1,3 +1,21 @@
+:root {
+  --app-bg: #F0F0F0;
+  --sidebar: #E3E6F3;
+  --app-content-secondary-color: #E3E6F3;
+  --app-content-main-color: #1f1c2e;
+  --sidebar-link: #1f1c2e;
+  --sidebar-hover-link: rgba(195, 207, 244, 0.5);
+  --sidebar-active-link: rgba(195, 207, 244, 1);
+  --sidebar-main-color: #1f1c2e;
+  --filter-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+  --table-border: #1a2131;
+  --table-header: #1a2131;
+  --action-color: #4F8A8B;
+  --action-color-hover: #454545;
+  --filter-reset: #2c394f;
+}
+
 html {
   font-family: "Poppins", sans-serif !important;
   -ms-scroll-chaining: none;
@@ -14,6 +32,49 @@ font-weight: 700;
   border-radius: 20px;
 
 }
+
+.well {
+  background-color: #F0F0F0;
+}
+
+.input-group-addon {
+  background-color: #E3E6F3;
+}
+
+.app-content {
+  padding: 16px;
+  /* background-color: var(--app-bg); */
+  height: 100%;
+  flex: 1;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.app-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.app-content-headerButton {
+  background-color: var(--action-color);
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 16px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: var(--action-color);
+  border: none;
+}
+
 
 button {
   padding: 10px !important;

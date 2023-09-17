@@ -48,6 +48,38 @@ button {
     margin-right: 50px;
   }
 
+.product-name {
+  font-size: 20px;
+}
+
+/* .description {
+  font-size: 18px !important;
+} */
+
+/* Media query for screens with a width of 460px or smaller */
+@media screen and (max-width: 460px) {
+
+  .product-name {
+    font-size: 18px;
+  }
+
+  /* .description {
+    font-size: 16px;
+  } */
+}
+
+/* Media query for screens with a width between 461px and 1024px */
+@media screen and (min-width: 461px) and (max-width: 1024px) {
+
+  .product-name {
+    font-size: 20px;
+  }
+
+  /* .description {
+    font-size: 20px;
+  } */
+}
+
 /* New CSS for image container with fixed aspect ratio */
 .image-container {
   position: relative;
@@ -171,6 +203,14 @@ button {
 
     .prodetails-container {
       display: inline-block;      
+  }
+
+  .product-name {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
   }
 
 

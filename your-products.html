@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/pages/your-products.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-content">
+          <div class="app-content-header">
+            <img class="logo" src="images/black2.png" alt="" style="width: 94px; height: 40px;"> 
+            <a onclick="history.back(-1)" class="app-content-headerButton mode-switch" style="text-decoration: none;">Back</a>
+            <button class="app-content-headerButton">Add Product</button>
+          </div>
+          <div class="app-content-actions">
+            <input class="search-bar" placeholder="Search..." type="text">
+            <div class="app-content-actions-wrapper">
+              <div class="filter-button-wrapper">
+                <button class="action-button filter jsFilter"><span>Filter</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></button>
+                <div class="filter-menu">
+                  <label>Category</label>
+                  <select>
+                    <option>All Categories</option>
+                    <option>Home & Office</option>                     
+                    <option>Smartphones & Accessories</option>
+                    <option>Computers & Electronics</option>
+                    <option>Fashion & Jewelries</option>
+                    <option>Cars & Automotive</option>
+                    <option>Sports & Games</option>
+                  </select>
+                  <div class="filter-menu-buttons">
+                    <button class="filter-button reset">
+                      Reset
+                    </button>
+                    <button class="filter-button apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="action-button list active" title="List View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              </button>
+              <button class="action-button grid" title="Grid View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </button>
+            </div>
+          </div>
+          
+          <div class="products-area-wrapper tableView">
+            <div class="products-header">
+              <div class="product-cell image">
+                Items
+                <button class="sort-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path fill="currentColor" d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"/></svg>
+                </button>
+              </div>
+              <div class="product-cell category">Category<button class="sort-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path fill="currentColor" d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"/></svg>
+                
+                </button></div>
+                <div class="product-cell price">Location<button class="sort-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path fill="currentColor" d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"/></svg>
+                
+                </button></div>
+                <div class="product-cell sales">Price<button class="sort-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path fill="currentColor" d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"/></svg>
+                  </button></div>
+              <div class="product-cell status-cell">Edit<button class="sort-button">
+                </button></div>
+
+              <div class="product-cell stock">Delete<button class="sort-button">
+                </button></div>
+            </div>
+            <!-- ======================FOR BACKEND CODE==================== -->
+            <!-- product starts here -->
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="images/laptop1.jpg" alt="product">
+                  <span>Ocean</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Home & Office</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 300</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><a href="update.html" style="text-decoration: none; color: #fff;"><i class="ri-edit-line"></i></a></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <!-- ends here -->
+            
+            <!-- DUMMY DATA DELETED AFTER BACKEND CONNECTS -->
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="images/laptop4.jpg" alt="product">
+                  <span>Lou</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Computers & Electronics</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 400</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="images/p4.jpeg" alt="product">
+                  <span>Yellow</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Automotive</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 700</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmVkcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Dreamy</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Sports</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 30,000</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW50ZXJpb3J8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Boheme</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Smartphones & Accessories</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 300</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGludGVyaW9yfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Sky</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Home & Office</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 3000</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGludGVyaW9yfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Midnight</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Home & Office</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 800</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW50ZXJpb3J8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Boheme</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Smartphones & Accessories</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 30,087</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1511389026070-a14ae610a1be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGludGVyaW9yfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Palm</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Automotive</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 2,400</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGludGVyaW9yfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Forest</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Sports</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 300</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGludGVyaW9yfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Sand</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Computers & Electronics</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 300</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGludGVyaW9yfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Autumn</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Automotive</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 300</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <div class="products-row">
+              <button class="cell-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+              </button>
+                <div class="product-cell image">
+                  <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW50ZXJpb3J8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="product">
+                  <span>Boheme</span>
+                </div>
+              <div class="product-cell category"><span class="cell-label">Category:</span>Home & Office</div>
+              <div class="product-cell status-cell">
+                <span class="cell-label">Location:</span>Almark
+              </div>
+              <div class="product-cell sales"><span class="cell-label">Price:</span>KES 300</div>
+              <div class="product-cell stock"><span class="cell-label">Edit:</span><button class="app-content-headerButton"><i class="ri-edit-line"></i></button></div>
+              <div class="product-cell price"><span class="cell-label">Delete:</span><button class="app-content-headerButton"><i class="ri-delete-bin-line"></i></button></div>
+            </div>
+            <!-- END OF DUMMY DATA -->
+
+          </div>
+        </div>
+        
+      </div>
+
+      <script src="js/products.js"></script>
+</body>
+</html>
